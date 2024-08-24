@@ -1,0 +1,44 @@
+.navbar {
+  background-color: var(--primary-color);
+}
+
+.logo {
+  display: block;
+  width: 100px;
+  margin-right: 20px;
+}
+
+.nav-link {
+  color: white;
+}
+
+.nav-link.active {
+  color: black;
+}
+
+.navbar-nav {
+  gap: 32px;
+}
+
+.btn {
+  border-radius: 8px;
+  border-color: white;
+}
+
+.btn-sign-in {
+  color: var(--primary-color);
+}
+
+.btn-sign-in:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.btn-sign-up {
+  background-color: var(--primary-color);
+}
+
+.btn-sign-up:hover {
+  color: var(--primary-color);
+  background-color: #fff;
+}

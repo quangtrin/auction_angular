@@ -12,10 +12,12 @@ import { BuyerDashboadComponent } from './customer/buyer/buyer-dashboad/buyer-da
 import { CheckoutComponent } from './customer/buyer/checkout/checkout.component';
 import { PageNotFoundComponent } from './shared/layouts/page-not-found/page-not-found.component';
 import { AdminAuthGuardLogin, AdminAuthGaurdService, BuyerAuthGaurdService, SellerAuthGaurdService, SellerBuyerAuthGuardLogin } from './shared/services/auth-guard.service';
+import { SellComponent } from './sell/sell.component';
 
 export const routes: Routes = [
   { path: "", redirectTo: "home", pathMatch: "full" },
   { path: "home", component: HomeComponent },
+  { path: "sell", component: SellComponent },
   { path: "my-profile", component: UserProfileComponent },
   { path: "contact-us", component: ContactUsComponent },
   //admin

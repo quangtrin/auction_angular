@@ -1,0 +1,35 @@
+.title {
+  font-size: large;
+  font-weight: 600;
+}
+
+.layout-outside {
+  padding: 0.5rem 3rem;
+  width: 15vw;
+}
+
+.list-item {
+  height: 80vh;
+  overflow-y: auto;
+}
+
+/* width */
+.list-item::-webkit-scrollbar {
+  width: .7rem;
+}
+
+/* Track */
+.list-item::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+.list-item::-webkit-scrollbar-thumb {
+  background: #C1C7DE;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.list-item::-webkit-scrollbar-thumb:hover {
+  background: #a9aec4;
+}

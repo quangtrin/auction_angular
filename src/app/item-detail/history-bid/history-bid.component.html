@@ -1,0 +1,28 @@
+<div>
+  <div class="flex-space-between">
+    <div class="user-bid">
+      <div class="avatar">
+        <img
+          src="https://s3-alpha-sig.figma.com/img/fdf1/575a/a55ec8287a4f5829e3d377ed5cba24e0?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=JxZTFlQkybcRfBcWT9KB-3spPsr5USxVeVoj56kuqy3H-ooeo1YQ6OG6HppO6ltEFAK4JXozIcMEYN~VdtIbaCl61BDGsSX7LFutnKcSF-5ndGTCRK64EsxFwd4eU56~N8JdF~Y0dax6hf7pCGfewm2oOzF~vm9Vgk8Ln8X9oK2CLWpGd1cnxsT5OIh2cAJGG2pL2x9~9aJ52PFoinuo5K6vyckVzS8AQADD5ujDtMttgN~aeS9HVBb4JkG-c2Mo8FK6Ms37VNeVy9Pdm8v2xVy9GhkPW5YNr-nm-hqnjmIN3rUcKjJpE-OeZtEPQsA4VDUrZ7OSXrx6G4390aGYRA__"
+        />
+      </div>
+      <div class="name">Richa Mansookh</div>
+      <div class="icon-bid"><i class="bi bi-arrow-up-short"></i></div>
+    </div>
+    <div class="action" (click)="onOpenPrice()">
+      @if (openPrice) {
+        <i class="bi bi-arrow-up-circle-fill"></i>
+      } @else {
+        <i class="bi bi-arrow-down-circle-fill"></i>
+      }
+    </div>
+  </div>
+  @if (openPrice) {
+    <div class="flex-space-between">
+      <div class="score-bid">Bidding price - 17 score</div>
+      <div class="percent">
+        <span><i class="bi bi-caret-up-fill"></i></span>70%
+      </div>
+    </div>
+  }
+</div>

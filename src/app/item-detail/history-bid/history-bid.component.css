@@ -1,0 +1,41 @@
+.user-bid {
+  display: flex;
+  align-items: center;
+}
+
+.flex-space-between {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+}
+
+.user-bid .avatar img {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.user-bid .name {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: rgba(151, 151, 151, 1);
+}
+
+.action {
+  font-size: 1.2rem;
+  color: rgba(255, 73, 73, 1);
+  cursor: pointer;
+}
+
+.percent {
+  color: rgba(11, 227, 92, 0.79);
+}
+
+.score-bid{
+  text-transform: uppercase;
+  color: rgba(0, 190, 53, 0.79);
+  font-weight: 300;
+  font-size: 1.2rem;
+  padding-left: 1.2rem;
+}

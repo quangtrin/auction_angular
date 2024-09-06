@@ -1,5 +1,5 @@
 .title {
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   width: 100%;
   margin: 20px 0;
 }
@@ -31,18 +31,18 @@
 }
 
 .text {
-  font-size: 1.7rem;
+  font-size: 1.3rem;
 }
 
 .right-content {
   flex: 2;
   background-color: #f4f4f4;
   border-radius: 16px;
-  padding: 32px 16px;
+  padding: 16px 16px;
 }
 
 .sub-title {
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   margin-bottom: 24px;
   font-weight: 600;
 }
@@ -51,7 +51,6 @@
   background: #fff;
   padding: 16px;
   border-radius: 16px;
-  font-size: 1.5rem;
 }
 
 .form-field {
@@ -67,7 +66,7 @@
   font-weight: 600;
 }
 
-.submit-btn{
+.submit-btn {
   text-align: center;
 }
 
@@ -79,7 +78,7 @@
   color: white;
   border: none;
 
-  &:hover{
+  &:hover {
     opacity: 0.8;
     transform: scale(110%);
   }

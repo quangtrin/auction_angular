@@ -1,4 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
-:root{
-    --primary-color: #FF4949;
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+
+:root {
+  --primary-color: #ff4949;
+}
+
+.sell .p-fileupload-buttonbar{
+  background: transparent;
+  border: none;
+}
+
+.sell .p-fileupload-content{
+  display: none;
 }

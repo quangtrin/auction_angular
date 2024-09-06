@@ -1,0 +1,67 @@
+<div class="sell container mt-2">
+  <p class="title">Sell Your Property</p>
+  <div class="body">
+    <div class="left-content">
+      <p-image
+        *ngIf="selectedFileUrl.length > 0"
+        [src]="selectedFileUrl"
+        alt="Image"
+        width="250"
+        [preview]="true"
+        class="preview-image"
+      />
+      <p-fileUpload
+        chooseLabel="Upload"
+        name="demo[]"
+        accept="image/*"
+        maxFileSize="1000000"
+        [showUploadButton]="false"
+        [showCancelButton]="false"
+        (onSelect)="onSelect($event)"
+        class="upload-btn"
+      >
+        <ng-template pTemplate="file" class="bg-hidden"></ng-template>
+      </p-fileUpload>
+
+      <p class="text">Upload Pictures <br />of the property</p>
+    </div>
+    <div class="right-content">
+      <div class="sub-title">FILL IN THE DETAILS</div>
+      <div class="form">
+        <div class="form-field">
+          <label for="product-name" class="label"
+            >Name of the Property, Category</label
+          >
+          <input
+            id="product-name"
+            class="form-control"
+            type="text"
+            aria-label="default input example"
+          />
+        </div>
+
+        <div class="form-field">
+          <label for="location" class="label">Location</label>
+          <input id="location" class="form-control" type="text" />
+        </div>
+
+        <div class="form-field">
+          <label for="bid-price" class="label">Bid Price</label>
+          <input id="bid-price" class="form-control" type="number" />
+        </div>
+
+        <div class="form-field">
+          <label for="files" class="label"
+            >Related Documents (Like adhaar card, pan card, property papers
+            etc.)</label
+          >
+          <input id="files" class="form-control" type="file" multiple />
+        </div>
+
+        <div class="submit-btn">
+          <button class="sell-btn">SELL</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

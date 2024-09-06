@@ -18,9 +18,7 @@
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">
-            Categories
-            </a>
+          <a class="nav-link" href="#"> Categories </a>
         </li>
         <li class="nav-item" *ngIf="user_role == 'buyer'">
           <a class="nav-link" routerLink="/buyer-dashboard">Order</a>
@@ -38,7 +36,7 @@
           <a class="nav-link" routerLink="/admin/user">Users</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/contact-us">Sell</a>
+          <a class="nav-link" routerLink="/sell">Sell</a>
         </li>
       </ul>
       <ul class="navbar-nav ml-auto" *ngIf="!logged_in">
@@ -46,7 +44,9 @@
           <a class="btn btn-light btn-sign-in" routerLink="/sign-in">Sign In</a>
         </li>
         <li class="nav-item">
-          <a class="btn btn-danger btn-sign-up" routerLink="/sign-up">Sign Up</a>
+          <a class="btn btn-danger btn-sign-up" routerLink="/sign-up"
+            >Sign Up</a
+          >
         </li>
       </ul>
       <ul class="navbar-nav ml-auto" *ngIf="logged_in">

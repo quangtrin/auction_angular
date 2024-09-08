@@ -36,12 +36,6 @@ export const routes: Routes = [
     ]
   },
   {
-    path:'', canActivate:[SellerBuyerAuthGuardLogin], children:[
-      {path:"sign-in", component:SigninSignupComponent},
-      {path:"sign-up", component:SigninSignupComponent},
-    ]
-  },
-  {
     path:'', canActivate:[SellerAuthGaurdService], children:[
       {path:"seller-dashboard", component:SellerDashboardComponent},
       {path:"seller/product", component:ProductComponent}
